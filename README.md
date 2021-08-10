@@ -5,8 +5,8 @@
 - [简短介绍](#简短介绍)
 - [构建AMM的组成部分](#构建AMM的组成部分)
 - [合约部署](#合约部署)
-- [修改avalanche-sdk代码](#修改 avalanche-sdk 代码)
-- [修改avalanche-interface代码](#修改 avalanche-interface 代码)
+- [修改avalanche-sdk代码](#修改avalanche-sdk代码)
+- [修改avalanche-interface代码](#修改avalanche-interface代码)
 - [创建合约代币](#创建合约代币)
 - [添加流动性以及交易视频演示](#添加流动性以及交易视频演示)
 
@@ -117,7 +117,7 @@ contract UniswapV2Factory is IUniswapV2Factory {
 
 现在已经将AMM的主要功能部署在Avalanche测试网上。
 
-## 修改 avalanche-sdk 代码
+## 修改avalanche-sdk代码
 *接下来将用到原uniswap-sdk以及uniswap-interface部分代码，在上传之前，我已经对部分内容进行了修改，随后你只需要修改一下参数即可*
 
 * [avalanche-sdk代码](https://github.com/valueflowever/avalanche-build-AMM-tutorial/tree/main/avalanche-sdk)
@@ -143,7 +143,7 @@ npm publish --access public //上传npm包
 
 上传成功
 
-## 修改 avalanche-interface 代码
+## 修改avalanche-interface代码
 * [avalanche-interface]()代码
 
 ``` sh
