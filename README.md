@@ -132,4 +132,55 @@ npm publish --access public //上传npm包
 ```
 ![](https://github.com/valueflowever/avalanche-build-AMM-tutorial/blob/main/image/avalanche-sdk%E5%BA%93%E5%8F%91%E5%B8%83%E6%88%90%E5%8A%9F.png)
 
+上传成功
+
+## 修改 avalanche-interface 代码
+* [avalanche-interface]()代码
+
+``` sh
+cd avalanche-interface
+```
+* 找到 package.json 文件, 按下图所示位置，修改为自己刚才上传的库名以及版本号
+
+![](https://github.com/valueflowever/avalanche-build-AMM-tutorial/blob/main/image/avalanche-interface%E4%BF%AE%E6%94%B9%E4%B8%BA%E8%87%AA%E5%B7%B1%E5%88%9A%E6%89%8D%E4%B8%8A%E4%BC%A0%E7%9A%84%E5%BA%93%E5%90%8D.png)
+
+* 然后将原来在文件内的库给替换掉
+
+![](https://github.com/valueflowever/avalanche-build-AMM-tutorial/blob/main/image/avalanche-interface%E6%9B%BF%E6%8D%A2%E5%BA%93.png)
+
+* 修改 avalanche-interface\src\constants\index.ts 路径下的路由地址
+
+![](https://github.com/valueflowever/avalanche-build-AMM-tutorial/blob/main/image/avalanche-interface%E4%BF%AE%E6%94%B9%E8%B7%AF%E7%94%B1%E5%90%88%E7%BA%A6%E5%9C%B0%E5%9D%80.png)
+
+* 将avalanche-inteface\src\constants\multicall\index.ts 参数改为自己的multicall合约地址
+
+![](https://github.com/valueflowever/avalanche-build-AMM-tutorial/blob/main/image/avalanche-interface%E4%BF%AE%E6%94%B9multicall%E5%90%88%E7%BA%A6%E5%9C%B0%E5%9D%80.png)
+
+```sh
+npm install
+npm start
+```
+
+启动后，即可看到如下所示页面，已经成功部署! AMM的功能已经实现，后续可以按照自己的需求进行修改。
+
+![](https://github.com/valueflowever/avalanche-build-AMM-tutorial/blob/main/image/avalanche-interface%E6%B5%8B%E8%AF%95%E9%A1%B5%E9%9D%A2.png)
+
+## 创建合约代币
+1. 打开Remix,导入 [EIP20.sol](https://github.com/valueflowever/avalanche-build-AMM-tutorial/blob/main/smart_contract/EIP20.sol) 和 [EIP20Interface.sol](https://github.com/valueflowever/avalanche-build-AMM-tutorial/blob/main/smart_contract/EIP20Interface.sol)
+
+2. 部署两个代币合合约并记录下它们的地址, 部署 EIP20.sol 即可（用来测试AMM功能）
+
+* 按照下面参数说明，创建自己的代币
+
+| 参数 | 说明 |
+| --- | --- | 
+| _INITIALAMOUNT | 代币发行量 | 
+| _TOKENNAME | 代币名称 | 
+| _DECIMALUNITS | 浮点位数 | 
+| _TOKENSYMBOL | 代币简称 | 
+
+![](https://github.com/valueflowever/avalanche-build-AMM-tutorial/blob/main/image/%E5%A1%AB%E5%86%99%E4%BD%A0%E7%9A%84%E4%BB%A3%E5%B8%81%E5%B9%B6%E7%A1%AE%E8%AE%A4%E9%83%A8%E7%BD%B2.png)
+
+## 添加流动性以及交易视频演示
+视频地址：
 
