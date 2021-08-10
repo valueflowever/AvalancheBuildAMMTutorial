@@ -3,7 +3,7 @@
 
 ## 成品展示
 
-- 演示视频地址：
+- 演示视频地址：https://www.bilibili.com/video/BV1cg411j7Hw/
 - 类似Demo展示地址：www.dfdota.cn
 - 内容地址： https://github.com/valueflowever/avalanche-build-AMM-tutorial
 
@@ -182,5 +182,5 @@ npm start
 ![](https://github.com/valueflowever/avalanche-build-AMM-tutorial/blob/main/image/%E5%A1%AB%E5%86%99%E4%BD%A0%E7%9A%84%E4%BB%A3%E5%B8%81%E5%B9%B6%E7%A1%AE%E8%AE%A4%E9%83%A8%E7%BD%B2.png)
 
 ## 添加流动性以及交易视频演示
-视频地址：
+视频地址：https://www.bilibili.com/video/BV1cg411j7Hw/
 
