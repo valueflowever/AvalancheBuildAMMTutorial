@@ -1,6 +1,10 @@
 # avalanche-build-AMM-tutorial
 # Avalanche构建AMM（自动做市商）教程
 
+- [成品展示](## 成品展示)
+- [简短介绍](## 简短介绍 )
+
+
 ## 成品展示
 
 - 演示视频地址：https://www.bilibili.com/video/BV1cg411j7Hw/
