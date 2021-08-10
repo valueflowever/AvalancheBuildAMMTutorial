@@ -5,8 +5,8 @@
 - [简短介绍](#简短介绍)
 - [构建AMM的组成部分](#构建AMM的组成部分)
 - [合约部署](#合约部署)
-- [修改avalanche-sdk代码](#修改avalanche-sdk代码)
-- [修改 avalanche-interface 代码](#修改 avalanche-interface 代码)
+- [修改avalanche-sdk代码](#修改 avalanche-sdk 代码)
+- [修改avalanche-interface代码](#修改 avalanche-interface 代码)
 - [创建合约代币](#创建合约代币)
 - [添加流动性以及交易视频演示](#添加流动性以及交易视频演示)
 
