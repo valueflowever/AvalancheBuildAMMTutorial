@@ -3,11 +3,11 @@
 
 - [Demo](#Demo)
 - [Introduction](#Introduction)
-- [the components of AMM](#The-components-of-AMM)
+- [The Components of AMM](#The-Components-of-AMM)
 - [Deploy AMM smart contract](#Deploy-AMM-smart-contract)
-- [修改avalanche-sdk代码](#修改avalanche-sdk代码)
-- [修改avalanche-interface代码](#修改avalanche-interface代码)
-- [创建合约代币](#创建合约代币)
+- [Modify avalanche-sdk code](#Modify-avalanche-sdk-code)
+- [Modify avalanche-interface code](#Modify-avalanche-interface-code)
+- [create your ERC20 token](#create-your-ERC20-token)
 - [the video demo of add liquidity and swap token](#the-video-demo-of-add-liquidity-and-swap-token)
 
 ## Demo
@@ -41,10 +41,10 @@ Create AMM is a complicated process, and have very high requirements for solodit
 
 ---
 
-## The components of AMM
-* 路由合约(代币交易以及添加/删除流动性)
-* 工厂合约(用于创建流动性配对，设置收费地址)
-* WETH代币合约(主网代币不能直接用于交易，要先转换成WETH，因为部署在Avalanche上，我们需要用WAVAX的合约地址代替)
+## The Components of AMM
+* Router smart contract(the function of swap token and add/remove liqidity)
+* Factory smart contract(the function of create liquidity pair and manage which address to get transaction fees)
+* WETH Token smart contract(mainnet token is used to pay gas rather than swap token, we often need wrap mainnet token fist, beacause of deploying on Avalanche network, we should use WAVAX replace of the WETH)
 
 ## Deploy AMM smart contract
 
@@ -117,7 +117,7 @@ contract UniswapV2Factory is IUniswapV2Factory {
 
 现在已经将AMM的主要功能部署在Avalanche测试网上。
 
-## 修改avalanche-sdk代码
+## Modify avalanche-sdk code
 *接下来将用到原uniswap-sdk以及uniswap-interface部分代码，在上传之前，我已经对部分内容进行了修改，随后你只需要修改一下参数即可*
 
 * [avalanche-sdk代码](https://github.com/valueflowever/avalanche-build-AMM-tutorial/tree/main/avalanche-sdk)
