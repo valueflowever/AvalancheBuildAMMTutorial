@@ -28,7 +28,7 @@ AMM(Automated Market Maker), market maker play both buyer and seller, they get f
 
 ***What is Uniswap ?***
 
-[uniswap](https://docs.uniswap.org/protocol/V2/concepts/protocol-overview/how-uniswap-works)is the top Decentralized exchange deploy on ethereum, the famous project use AMM protocol to achieve commercial success.
+[Uniswap](https://docs.uniswap.org/protocol/V2/concepts/protocol-overview/how-uniswap-works) is the top Decentralized exchange deploy on ethereum, the famous project use AMM protocol to achieve commercial success.
 
 ***Why choose Uniswap V2 AMM protocol deploy on Avalanche ?***
 
