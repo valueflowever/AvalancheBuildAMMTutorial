@@ -7,8 +7,8 @@
 - [Deploy AMM smart contract](#Deploy-AMM-smart-contract)
 - [Modify avalanche-sdk code](#Modify-avalanche-sdk-code)
 - [Modify avalanche-interface code](#Modify-avalanche-interface-code)
-- [create your ERC20 token](#create-your-ERC20-token)
-- [the video demo of add liquidity and swap token](#the-video-demo-of-add-liquidity-and-swap-token)
+- [Create your ERC20 token](#create-your-ERC20-token)
+- [The video demo of add liquidity and swap token](#the-video-demo-of-add-liquidity-and-swap-token)
 
 ## Demo
 
@@ -48,7 +48,7 @@ Create AMM is a complicated process, and have very high requirements for solodit
 
 ## Deploy AMM smart contract
 
-1. 前往 Chainlist添加AVAX测试网, 测试网的 ChainID是43113
+1. Go to [Chainlist](https://chainlist.org/) add Avalanche Testnet in Metamask, Testnet ChainID is 43113.
 ![](https://github.com/valueflowever/avalanche-build-AMM-tutorial/blob/main/image/MetaMask%E6%B7%BB%E5%8A%A0AVAX%E6%B5%8B%E8%AF%95%E7%BD%91%E7%BB%9C.png)
 
 2.部署在Avalanche测试网上，先去[水龙头合约](https://faucet.avax-test.network/)领取测试代币![](https://github.com/valueflowever/avalanche-build-AMM-tutorial/blob/main/image/%E9%A2%86%E5%8F%96AVAX%E6%B5%8B%E8%AF%95%E4%BB%A3%E5%B8%81.png)
@@ -143,7 +143,7 @@ npm publish --access public //上传npm包
 
 上传成功
 
-## 修改avalanche-interface代码
+## Modify avalanche-interface code
 * [avalanche-interface]()代码
 
 ``` sh
@@ -174,7 +174,7 @@ npm start
 
 ![](https://github.com/valueflowever/avalanche-build-AMM-tutorial/blob/main/image/avalanche-interface%E6%B5%8B%E8%AF%95%E9%A1%B5%E9%9D%A2.png)
 
-## 创建合约代币
+## Create your ERC20 token
 1. 打开Remix,导入 [EIP20.sol](https://github.com/valueflowever/avalanche-build-AMM-tutorial/blob/main/smart_contract/EIP20.sol) 和 [EIP20Interface.sol](https://github.com/valueflowever/avalanche-build-AMM-tutorial/blob/main/smart_contract/EIP20Interface.sol)
 
 2. 部署两个代币合合约并记录下它们的地址, 部署 EIP20.sol 即可（用来测试AMM功能）
@@ -190,6 +190,6 @@ npm start
 
 ![](https://github.com/valueflowever/avalanche-build-AMM-tutorial/blob/main/image/%E5%A1%AB%E5%86%99%E4%BD%A0%E7%9A%84%E4%BB%A3%E5%B8%81%E5%B9%B6%E7%A1%AE%E8%AE%A4%E9%83%A8%E7%BD%B2.png)
 
-## the video demo of add liquidity and swap token
+## The video demo of add liquidity and swap token
 Demo URL：https://www.bilibili.com/video/BV1cg411j7Hw/
 
