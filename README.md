@@ -1,52 +1,52 @@
 # avalanche-build-AMM-tutorial
-`build amm like uniswap on avalanche network`
+*** build amm like uniswap on avalanche network ***
 
-- [成品展示](#成品展示)
-- [简短介绍](#简短介绍)
-- [构建AMM的组成部分](#构建AMM的组成部分)
-- [AMM合约部署](#AMM合约部署)
+- [Demo](#Demo)
+- [Introduction](#Introduction)
+- [the components of AMM](#The-components-of-AMM)
+- [Deploy AMM smart contract](#Deploy-AMM-smart-contract)
 - [修改avalanche-sdk代码](#修改avalanche-sdk代码)
 - [修改avalanche-interface代码](#修改avalanche-interface代码)
 - [创建合约代币](#创建合约代币)
 - [the video demo of add liquidity and swap token](#the-video-demo-of-add-liquidity-and-swap-token)
 
-## 成品展示
+## Demo
 
-- 演示视频地址：https://www.bilibili.com/video/BV1cg411j7Hw/
-- 类似Demo展示地址：www.dfdota.cn
-- 内容地址： https://github.com/valueflowever/avalanche-build-AMM-tutorial
+- Demo Video：https://www.bilibili.com/video/BV1cg411j7Hw/
+- Similar demo website(use polygon network)：www.dfdota.cn
+- github： https://github.com/valueflowever/avalanche-build-AMM-tutorial
 
-## 简短介绍 
+## Introduction 
 
-***什么是 Avalanche?***
+***What is Avalanche?***
 
-雪崩协议（Avalanche)是区块链领域速度最快的智能合约平台，雪崩协议链上交易完成速度最快、拥有最多数量的验证器，能够保证所有PoS协议活动的安全性，本教程选择在Avalanche的C-Chain测试网部署AMM智能合约。
+Avalanche is the fastest smart contract platform in the blockchain, and the fastest transaction completion on the avalanche protocol chain, the largest number of validators, and the security of all PoS protocol activities. This tutorial choose Avalanche's C-Chain test network to deploy AMM smart contract.
 
-***什么是 AMM ?***
+***What is AMM ?***
 
-AMM(Automated Market Maker)，自动做市商，市商通过提供流动性收取别人交易的手续费，相对于去中心化交易所，不再需要对手盘，从而实现最大的流动性以及最高的日均交易量。
+AMM(Automated Market Maker), market maker play both buyer and seller, they get fee from other people transactions by adding liquidity, compare to centralized exchange, AMM doesn't need toekn buyer,so it can achieve the greatest liquidity and the highest average daily trading volume.
 
-***什么是 Uniswap ?***
+***What is Uniswap ?***
 
-[uniswap](https://docs.uniswap.org/protocol/V2/concepts/protocol-overview/how-uniswap-works)作为以太坊上的去中心化头部交易所，是采用amm取得商业成功的著名协议。
+[uniswap](https://docs.uniswap.org/protocol/V2/concepts/protocol-overview/how-uniswap-works)is the top Decentralized exchange deploy on ethereum, the famous project use AMM protocol to achieve commercial success.
 
-***为何选择 Uniswap V2的AMM协议部署在 Avalanche ?***
+***Why choose Uniswap V2 AMM protocol deploy on Avalanche ?***
 
 目前绝大部分去中心化交易所采用的是Uniswap v2版本的智能合约，在此基础上构建AMM的知名项目有sushiswap/pancakeswap/quickswap等,他们在商业应用方面取得了成功。  
 创建AMM是一个非常复杂的过程，对于solodity代码的编写，有着很高的要求，考虑到开发成本及实用性，我们选择Uniswap V2的智能合约来构建AMM。  
 
-***什么是 Remix ?***
+***What is Remix ?***
 
-[Remix](http://remix.app.hubwiz.com/) solidity IDE, 用来编写部署EVM智能合约
+[Remix](http://remix.app.hubwiz.com/) solidity IDE, we can write and deploy smart contract.
 
 ---
 
-## 构建AMM的组成部分
+## The components of AMM
 * 路由合约(代币交易以及添加/删除流动性)
 * 工厂合约(用于创建流动性配对，设置收费地址)
 * WETH代币合约(主网代币不能直接用于交易，要先转换成WETH，因为部署在Avalanche上，我们需要用WAVAX的合约地址代替)
 
-## AMM合约部署
+## Deploy AMM smart contract
 
 1. 前往 Chainlist添加AVAX测试网, 测试网的 ChainID是43113
 ![](https://github.com/valueflowever/avalanche-build-AMM-tutorial/blob/main/image/MetaMask%E6%B7%BB%E5%8A%A0AVAX%E6%B5%8B%E8%AF%95%E7%BD%91%E7%BB%9C.png)
