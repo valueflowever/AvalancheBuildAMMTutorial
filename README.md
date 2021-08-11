@@ -1,5 +1,5 @@
 # avalanche-build-AMM-tutorial
-# Avalanche构建AMM（自动做市商）教程
+`build amm like uniswap on avalanche network`
 
 - [成品展示](#成品展示)
 - [简短介绍](#简短介绍)
@@ -8,7 +8,7 @@
 - [修改avalanche-sdk代码](#修改avalanche-sdk代码)
 - [修改avalanche-interface代码](#修改avalanche-interface代码)
 - [创建合约代币](#创建合约代币)
-- [添加流动性以及交易视频演示](#添加流动性以及交易视频演示)
+- [the video demo of add liquidity and swap token](#the-video-demo-of-add-liquidity-and-swap-token)
 
 ## 成品展示
 
@@ -190,6 +190,6 @@ npm start
 
 ![](https://github.com/valueflowever/avalanche-build-AMM-tutorial/blob/main/image/%E5%A1%AB%E5%86%99%E4%BD%A0%E7%9A%84%E4%BB%A3%E5%B8%81%E5%B9%B6%E7%A1%AE%E8%AE%A4%E9%83%A8%E7%BD%B2.png)
 
-## 添加流动性以及交易视频演示
-视频地址：https://www.bilibili.com/video/BV1cg411j7Hw/
+## the video demo of add liquidity and swap token
+Demo URL：https://www.bilibili.com/video/BV1cg411j7Hw/
 
