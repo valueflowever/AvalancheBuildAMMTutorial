@@ -32,8 +32,8 @@ AMM(Automated Market Maker), market maker play both buyer and seller, they get f
 
 ***Why choose Uniswap V2 AMM protocol deploy on Avalanche ?***
 
-目前绝大部分去中心化交易所采用的是Uniswap v2版本的智能合约，在此基础上构建AMM的知名项目有sushiswap/pancakeswap/quickswap等,他们在商业应用方面取得了成功。  
-创建AMM是一个非常复杂的过程，对于solodity代码的编写，有着很高的要求，考虑到开发成本及实用性，我们选择Uniswap V2的智能合约来构建AMM。  
+Currently most of the Decentralized exchange fork the AMM smart contract of Uniswap V2, for example sushiswap/pancakeswap/quickswap, they have achieved success in commercial applications.  
+Create AMM is a complicated process, and have very high requirements for solodity code writing, Considering the development cost and practicality, we choose to fork the smart contract of Uniswap V2 to build the decentralized exchange.
 
 ***What is Remix ?***
 
